@@ -21,7 +21,15 @@ export default {
     resolve(),
     typescript({
       tsconfig: './tsconfig.json',
-      clean: true
+      clean: true,
+      useTsconfigDeclarationDir: true,
+      tsconfigOverride: {
+        compilerOptions: {
+          declaration: true,
+          declarationDir: './dist/types',
+          sourceMap: true
+        }
+      }
     })
   ]
 }; 
