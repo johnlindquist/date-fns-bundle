@@ -1,0 +1,31 @@
+{
+  "name": "date-fns-bundle",
+  "version": "1.0.0",
+  "description": "Custom date-fns bundle with selected functions",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["date", "time", "date-fns"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "4.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "16.0.1",
+    "@rollup/plugin-terser": "0.4.4",
+    "rollup": "4.35.0",
+    "rollup-plugin-typescript2": "0.36.0",
+    "typescript": "5.8.2"
+  },
+  "packageManager": "pnpm@10.5.2"
+}
